@@ -1,4 +1,4 @@
-Steps to start this project
+# Steps & Guidlines
 
 1. Start with creating react application
 ```
