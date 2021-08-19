@@ -7,8 +7,10 @@ cd my-app
 npm start
 ```
 
-2. Inside of a project install (Axios)[https://axios-http.com/docs/intro]
+2. Inside of a project install [Axios](https://axios-http.com/docs/intro)
+
 ```npm install axios``` or ```yarn add axios```
+
 package.json file will look something like this after the installation of library
 ```
 "dependencies": {
