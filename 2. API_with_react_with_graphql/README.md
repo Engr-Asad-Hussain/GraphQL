@@ -27,4 +27,4 @@ package.json file will look something like this after the installation of librar
 
 3. Generate and copy Access Token from Github Personal Access Token.
 
-4. Create .env file in project folder and add REACT_APP_GITHUB_ACCESS_TOKEN="myGithubAccessToken" and save it.
+4. Create .env file in project folder and add REACT_APP_GITHUB_ACCESS_TOKEN=MyGithubAccessToken and save it.

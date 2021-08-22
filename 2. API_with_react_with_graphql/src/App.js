@@ -1,11 +1,9 @@
-// import GithubGraphQL1 from "./githubGraphQL1";
-import GithubAPI from './githubGraphql';
+import GithubGraphQL1 from "./githubGraphQL1";
 
 function App() {
   return (
     <div>
-      <GithubAPI />
-      {/* <GithubGraphQL1 /> */}
+      <GithubGraphQL1 />
     </div>
   );
 }
