@@ -4,7 +4,7 @@ import axios from 'axios'
 const api = axios.create({
     baseURL: 'https://api.github.com',
     headers: {
-        Authorization: `bearer ${process.env.REACT_APP_GITHUB_ACCESS_TOKEN}`
+        Authorization: `bearer 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`
     }
 });
 
@@ -14,9 +14,6 @@ function GithubAPI() {
         const QUERY_ORGANIZATION = `query {
             organization(login: "${organizationName}") {
                 name
-                description
-                url
-                createdAt
             }
         }`;
 
