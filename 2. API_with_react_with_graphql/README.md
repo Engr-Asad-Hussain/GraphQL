@@ -27,4 +27,7 @@ package.json file will look something like this after the installation of librar
 
 3. Generate and copy Access Token from Github Personal Access Token.
 
-4. Create .env file in project folder and add REACT_APP_GITHUB_ACCESS_TOKEN=MyGithubAccessToken and save it.
+4. Create .env file in project folder and add REACT_APP_GITHUB_ACCESS_TOKEN=MyGithubAccessToken
+
+5. There are different examples in this project.
+  1. [GithubGraphQL1](https://github.com/Engr-Asad-Hussain/GraphQL/blob/main/2.%20API_with_react_with_graphql/src/githubGraphQL1.js): This example includes operation type as query. You will learn about headers, authentication, environmental variables and how to make query with graphql. 

@@ -3,7 +3,7 @@ import axios from 'axios';
 
 
 const instance = axios.create({
-    method: 'get',
+    method: 'get',  
     responseType: 'json',
     baseURL: 'https://api.github.com',
     headers: {
@@ -11,32 +11,36 @@ const instance = axios.create({
     }
 });
 
-const FetchData = async() => {
+const fetchData = async (userData) => {
     const QUERY_ORGANIZATION = `query {
         organization(login: "facebook") {
             name
+            email
+            id
+            url
             description
         }
-    }`
-    const data = await instance.post(
-        '/graphql', 
+    }`;
+    const { data } = await instance.post(   // GraphQL always have "POST" request
+        '/graphql',
         { query: QUERY_ORGANIZATION }
-        );
-        setUserData(data);
-        console.log(data);
-    }
-    
+    );
+    userData[1](data);
+}
+
 function GithubGraphQL1() {
-    let [userData, setUserData] = useState(null);
-    console.log(process.env.REACT_APP_GITHUB_ACCESS_TOKEN);
-    useEffect( ()=>{
-        FetchData();
-    }, []);
+    let userData = useState(null);  // equals to [data, setData] = useState(null)
+
+    useEffect(() => {
+        fetchData(userData);    // passed this hook to store our api in fetchData function
+    });
 
     return (
         <div>
-            UserData:
-            {userData && JSON.stringify(userData, null, 4)}
+            <pre>
+                UserData:
+                {userData[0] && JSON.stringify(userData[0], null, 4)}
+            </pre>
         </div>
     );
 }

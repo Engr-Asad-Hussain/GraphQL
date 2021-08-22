@@ -5,11 +5,19 @@
 - A GraphQL operation is either a query (read), mutation (write), or subscription (continuous read). Each of those operations is only a string that needs to be constructed according to the GraphQL query language specification. 
 
 
-### 1. API without GraphQL
+### 1. Example of API Request Without GraphQL
 <ins>Objective:</ins>
 Illustrates the use of REST API with react application using Axios library.
 
 <ins>About Project:</ins>
-This project fetches user data and repositories from github public api and renders the object.
+This project fetches user data and repositories from github public api and renders it on DOM.
 
 
+### 2. Example of API With GraphQL
+<ins>Objective:</ins>
+Illustrates the use of GraphQL with react application using Axios library.
+
+<ins>About Project:</ins>
+REST API's has mutliple endpoints and we can't have any control on API call; that is, it returns all the properties of API although we need it or not. Compared to GraphQL, it has one endpoint and it will only returns specific data which we want. This will save out processing time and network request time.
+
+This project returns specific users data from github public api and renders it on DOM. Project includes examples of mutation and query as operation types.
