@@ -45,7 +45,7 @@ function GithubGraphQL3() {
 
     useEffect(() => {
         fetchData("google", setData);
-    });
+    }, []);
 
     return (
         <div>
