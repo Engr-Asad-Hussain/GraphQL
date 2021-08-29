@@ -38,4 +38,4 @@ package.json file will look something like this after the installation of librar
 
     4. [Graphql Example No. 4](https://github.com/Engr-Asad-Hussain/GraphQL/blob/main/2.%20API_with_react_with_graphql/src/githubGraphQL4.js): This example includes operation type as query with variables and dynamic operations.
 
-    5. [Graphql Example No. 5](https://github.com/Engr-Asad-Hussain/GraphQL/blob/main/2.%20API_with_react_with_graphql/src/githubGraphQL5.js): This example includes operation type as mutation with variables, directives and dynamic operations. You'll learn about graphql directives, mutation, addStart / removeStart and other basic operations/commands.
+    5. [Graphql Example No. 5](https://github.com/Engr-Asad-Hussain/GraphQL/blob/main/2.%20API_with_react_with_graphql/src/githubGraphQL5.js): This example includes operation type as mutation with variables, directives and dynamic operations. You'll learn about graphql directives, mutation, addStart / removeStart and destucturing with-in destucture.

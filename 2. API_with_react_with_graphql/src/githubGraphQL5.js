@@ -27,7 +27,7 @@ const fetchData = async(setData) => {
           }
         }
       }`;
-    const { data } = await api.post('/graphql',
+    const { data: { data: { removeStar: starRemoveFromRepo } } } = await api.post('/graphql',
         { 
             query: MUTATION_REPOSITORY,
             variables: {
@@ -36,7 +36,7 @@ const fetchData = async(setData) => {
             }
         }
     );
-    setData(data);
+    setData(starRemoveFromRepo);
 }
 
 function GithubGraphQL5() {
@@ -49,8 +49,10 @@ function GithubGraphQL5() {
     return (
         <div>
             <pre>
-                UserData:
+                UserData: 
+                <hr />
                 { data && JSON.stringify(data, null, 4)}
+                <hr />
             </pre>
         </div>
     );
