@@ -1,26 +1,31 @@
-# Steps & Guidlines
+# Simple Node Application
 
-1. Start with creating react application
+An easy way to get started with JavaScript on the command line. [Read more about it](https://www.robinwieruch.de/minimal-node-js-babel-setup).
+
+
+## Step # 01:
+Clone boilerplate node application
+```git clone https://github.com/rwieruch/minimal-node-application.git
+cd minimal-node-application
 ```
-npx create-react-app my-app
-cd my-app
-npm start
+
+## Step # 02:
+Install dependencies:
+```
+npm install apollo-boost graphql --save
+npm install cross-fetch --save
 ```
 
-2. Inside of a project install [Axios](https://axios-http.com/docs/intro)
-
-```npm install axios``` or ```yarn add axios```
-
-package.json file will look something like this after the installation of library
-```
+After installation of library pacakage.json looks like;
 "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "axios": "^0.21.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "web-vitals": "^1.0.1"
-  }
+    "apollo-boost": "^0.4.9",
+    "cross-fetch": "^3.1.4",
+    "dotenv": "^8.2.0",
+    "graphql": "^15.5.3"
+}
+
+## Step # 03
+Run Application 
+```
+npm start
 ```

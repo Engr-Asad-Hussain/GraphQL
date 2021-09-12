@@ -1,17 +1,29 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import 'dotenv/config';
+import 'cross-fetch/polyfill';
+import ApolloClient, { gql } from 'apollo-boost';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const client = new ApolloClient({
+    uri: 'https://api.github.com/graphql',
+    request: operation => {
+        operation.setContext({
+            headers: {
+                Authorization: `Bearer ${process.env.GITHUB_ACCESS_TOKEN}`
+            }
+        });
+    }
+});
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const QUERY_ORGANIZATION = gql`
+    query {
+        organization(login: "facebook") {
+            name
+            url
+            createdAt
+            avatarUrl 
+        }
+    }`;
+
+client.query({
+    query: QUERY_ORGANIZATION
+})
+    .then((res) => { console.log("Query Get: ", res) });
