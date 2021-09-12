@@ -21,3 +21,11 @@ Illustrates the use of GraphQL with react application using Axios library.
 REST API's has mutliple endpoints and we can't have any control on API call; that is, it returns all the properties of API although we need it or not. Compared to GraphQL, it has one endpoint and it will only returns specific data which we want. This will save out processing time and network request time.
 
 This project returns specific users data from github public api and renders it on DOM. Project includes examples of mutation and query as operation types.
+
+
+### 3. Minimal Node Application
+<ins>Objective:</ins>
+Illustrates the use of GraphQL with node.js application using ApolloClient library.
+
+<ins>About Project:</ins>
+This project returns specific users data from github server to node.js. Project includes examples of mutation and query as operation types.
