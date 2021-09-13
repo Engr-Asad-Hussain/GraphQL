@@ -31,3 +31,16 @@ Run Application
 ```
 npm start
 ```
+
+## About Projects
+<ins>[Project 01:](https://github.com/Engr-Asad-Hussain/GraphQL/blob/main/3.%20minimal-node-app/src/index0.js)</ins>
+
+Illustrates the use of graphql query with server side node.js. Includes 'dotenv', 'cross-fetch', and ApolloClient, { gql } from 'apollo-boost'.
+
+<ins>[Project 02:](https://github.com/Engr-Asad-Hussain/GraphQL/blob/main/3.%20minimal-node-app/src/index1.js)</ins>
+
+Illustrates the use of graphql query with variables with server side node.js. Includes 'dotenv', 'cross-fetch', and ApolloClient, { gql } from 'apollo-boost'.
+
+<ins>[Project 03:](https://github.com/Engr-Asad-Hussain/GraphQL/blob/main/3.%20minimal-node-app/src/index2.js)</ins>
+
+Illustrates the use of graphql mutation with variables with server side node.js. Includes 'dotenv', 'cross-fetch', and ApolloClient, { gql } from 'apollo-boost'.
