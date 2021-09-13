@@ -4,12 +4,8 @@ import ApolloClient, { gql } from 'apollo-boost';
 
 const client = new ApolloClient({
     uri: 'https://api.github.com/graphql',
-    request: (opr) => {
-        opr.setContext({
-            headers: {
-                Authorization: `Bearer ${process.env.GITHUB_ACCESS_TOKEN}`
-            }
-        });
+    headers: {
+        Authorization: `Bearer ${process.env.GITHUB_ACCESS_TOKEN}`
     }
 });
 
