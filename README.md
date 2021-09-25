@@ -23,9 +23,17 @@ REST API's has mutliple endpoints and we can't have any control on API call; tha
 This project returns specific users data from github public api and renders it on DOM. Project includes examples of mutation and query as operation types.
 
 
-### 3. Minimal Node Application
+### 3. Node with graphql & ApolloClient Application
 <ins>Objective:</ins>
 Illustrates the use of GraphQL with node.js application using ApolloClient library.
 
 <ins>About Project:</ins>
 This project returns specific users data from github server to node.js. Project includes examples of mutation and query as operation types.
+
+
+### 4. React with ApolloClient and graphql
+<ins>Objective:</ins>
+Illustrates the use of GraphQL with react application using ApolloClient library.
+
+<ins>About Project:</ins>
+This short tutorial gets you up and running with Apollo Client with react.
