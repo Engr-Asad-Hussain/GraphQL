@@ -1,21 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import App from './App';
 
-import {
-    ApolloClient,
-    InMemoryCache,
-    ApolloProvider,
-} from '@apollo/client';
-
-
-const client = new ApolloClient({
-    uri: 'https://48p1r2roz4.sse.codesandbox.io',
-    cache: new InMemoryCache()
-});
-
+// import { ApolloProvider, client } from './graphql/Query';
+import { ApolloProvider, client } from './graphql/Mutation';
 
 ReactDOM.render(
     <React.StrictMode>

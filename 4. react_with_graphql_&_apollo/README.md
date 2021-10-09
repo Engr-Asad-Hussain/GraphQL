@@ -110,3 +110,9 @@ Whenever this component renders, the useQuery hook automatically executes our qu
 When your app reloads, you should briefly see a loading indicator, followed by a list of exchange rates! If you don't, you can follow the tutorial in [Get started with ApolloClient](https://www.apollographql.com/docs/react/get-started/).
 
 Congrats, you just made your first component that renders with GraphQL data from Apollo Client! 🎉 Now you can try building more components that use useQuery and experiment with the concepts you just learned.
+
+------------------------------------------------------------
+[Query Documentataion](https://www.apollographql.com/docs/react/data/queries/)
+
+
+[Mutataion Documentation](https://www.apollographql.com/docs/react/data/mutations/)

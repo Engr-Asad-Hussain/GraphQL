@@ -37,3 +37,4 @@ Illustrates the use of GraphQL with react application using ApolloClient library
 
 <ins>About Project:</ins>
 This short tutorial gets you up and running with Apollo Client with react.
+
